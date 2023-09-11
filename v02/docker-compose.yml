@@ -1,0 +1,40 @@
+version: '3.4'  # I've updated the version to support healthcheck conditions
+
+services:
+  db:
+    image: mysql:8.0.34
+    environment:
+      MYSQL_DATABASE: 'orchestrator'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+    ports:
+      - '3307:3306'
+    expose:
+      - '3306'
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-ppassword"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - '5000:5000'
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - APP_SETTINGS=project.config.DevelopmentConfig
+      - DATABASE_URL=mysql+pymysql://user:password@db:3306/orchestrator
+      - DB_HOST=db
+      - DB_USER=user
+      - DB_PASSWORD=password
+      - DB_NAME=orchestrator
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock  # Mount Docker socket

@@ -1,0 +1,362 @@
+                    
+                    
+┌──────────────────┐
+│ 40 Code Findings │
+└──────────────────┘
+                                             
+    .github/workflows/build-test-docker.yaml 
+       yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.
+  third-party-action-not-pinned-                                                
+       to-commit-sha                                                            
+          An action sourced from a third-party repository on GitHub is not      
+  pinned to a full length                                                       
+          commit SHA. Pinning an action to a full length commit SHA is currently
+  the only way to use                                                           
+          an action as an immutable release. Pinning to a particular SHA helps  
+  mitigate the risk of a                                                        
+          bad actor adding a backdoor to the action's repository, as they would 
+  need to generate a                                                            
+          SHA-1 collision for a valid Git object payload.                       
+          Details: https://sg.run/koLA                                          
+                                                                                
+           57┆ - uses: docker/setup-buildx-action@v2
+            ⋮┆----------------------------------------
+           60┆ uses: docker/metadata-action@v4
+            ⋮┆----------------------------------------
+           67┆ uses: docker/build-push-action@v4
+                                                 
+    .github/workflows/build-test-javascript.yaml 
+       yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.
+  third-party-action-not-pinned-                                                
+       to-commit-sha                                                            
+          An action sourced from a third-party repository on GitHub is not      
+  pinned to a full length                                                       
+          commit SHA. Pinning an action to a full length commit SHA is currently
+  the only way to use                                                           
+          an action as an immutable release. Pinning to a particular SHA helps  
+  mitigate the risk of a                                                        
+          bad actor adding a backdoor to the action's repository, as they would 
+  need to generate a                                                            
+          SHA-1 collision for a valid Git object payload.                       
+          Details: https://sg.run/koLA                                          
+                                                                                
+          106┆ uses: aws-actions/configure-aws-credentials@v2
+                                                
+    .github/workflows/call-bump-pr-workflow.yml 
+       yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.
+  third-party-action-not-pinned-                                                
+       to-commit-sha                                                            
+          An action sourced from a third-party repository on GitHub is not      
+  pinned to a full length                                                       
+          commit SHA. Pinning an action to a full length commit SHA is currently
+  the only way to use                                                           
+          an action as an immutable release. Pinning to a particular SHA helps  
+  mitigate the risk of a                                                        
+          bad actor adding a backdoor to the action's repository, as they would 
+  need to generate a                                                            
+          SHA-1 collision for a valid Git object payload.                       
+          Details: https://sg.run/koLA                                          
+                                                                                
+           33┆ uses: docker://public.ecr.aws/y9k7q4m1/devops/cicd:latest
+                                                    
+    .github/workflows/check-semgrep-pro-version.yml 
+       yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.
+  third-party-action-not-pinned-                                                
+       to-commit-sha                                                            
+          An action sourced from a third-party repository on GitHub is not      
+  pinned to a full length                                                       
+          commit SHA. Pinning an action to a full length commit SHA is currently
+  the only way to use                                                           
+          an action as an immutable release. Pinning to a particular SHA helps  
+  mitigate the risk of a                                                        
+          bad actor adding a backdoor to the action's repository, as they would 
+  need to generate a                                                            
+          SHA-1 collision for a valid Git object payload.                       
+          Details: https://sg.run/koLA                                          
+                                                                                
+           53┆ uses: aws-actions/configure-aws-credentials@v2
+                                         
+    .github/workflows/e2e-semgrep-ci.yml 
+       yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.
+  third-party-action-not-pinned-                                                
+       to-commit-sha                                                            
+          An action sourced from a third-party repository on GitHub is not      
+  pinned to a full length                                                       
+          commit SHA. Pinning an action to a full length commit SHA is currently
+  the only way to use                                                           
+          an action as an immutable release. Pinning to a particular SHA helps  
+  mitigate the risk of a                                                        
+          bad actor adding a backdoor to the action's repository, as they would 
+  need to generate a                                                            
+          SHA-1 collision for a valid Git object payload.                       
+          Details: https://sg.run/koLA                                          
+                                                                                
+          129┆ uses: docker://public.ecr.aws/y9k7q4m1/devops/cicd:latest
+                               
+    .github/workflows/lint.yml 
+       yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.
+  third-party-action-not-pinned-                                                
+       to-commit-sha                                                            
+          An action sourced from a third-party repository on GitHub is not      
+  pinned to a full length                                                       
+          commit SHA. Pinning an action to a full length commit SHA is currently
+  the only way to use                                                           
+          an action as an immutable release. Pinning to a particular SHA helps  
+  mitigate the risk of a                                                        
+          bad actor adding a backdoor to the action's repository, as they would 
+  need to generate a                                                            
+          SHA-1 collision for a valid Git object payload.                       
+          Details: https://sg.run/koLA                                          
+                                                                                
+           44┆ - uses: pre-commit/action@v3.0.0
+            ⋮┆----------------------------------------
+           61┆ - uses: pre-commit/action@v3.0.0
+            ⋮┆----------------------------------------
+          108┆ - uses: reviewdog/action-actionlint@v1
+                                       
+    .github/workflows/open-bump-pr.yml 
+       yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.
+  third-party-action-not-pinned-                                                
+       to-commit-sha                                                            
+          An action sourced from a third-party repository on GitHub is not      
+  pinned to a full length                                                       
+          commit SHA. Pinning an action to a full length commit SHA is currently
+  the only way to use                                                           
+          an action as an immutable release. Pinning to a particular SHA helps  
+  mitigate the risk of a                                                        
+          bad actor adding a backdoor to the action's repository, as they would 
+  need to generate a                                                            
+          SHA-1 collision for a valid Git object payload.                       
+          Details: https://sg.run/koLA                                          
+                                                                                
+           69┆ uses: docker://public.ecr.aws/y9k7q4m1/devops/cicd:latest
+                                       
+    .github/workflows/push-docker.yaml 
+       yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.
+  third-party-action-not-pinned-                                                
+       to-commit-sha                                                            
+          An action sourced from a third-party repository on GitHub is not      
+  pinned to a full length                                                       
+          commit SHA. Pinning an action to a full length commit SHA is currently
+  the only way to use                                                           
+          an action as an immutable release. Pinning to a particular SHA helps  
+  mitigate the risk of a                                                        
+          bad actor adding a backdoor to the action's repository, as they would 
+  need to generate a                                                            
+          SHA-1 collision for a valid Git object payload.                       
+          Details: https://sg.run/koLA                                          
+                                                                                
+           42┆ uses: docker/setup-buildx-action@v2
+            ⋮┆----------------------------------------
+           55┆ - uses: docker/login-action@v2
+                                  
+    .github/workflows/release.yml 
+       yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.
+  third-party-action-not-pinned-                                                
+       to-commit-sha                                                            
+          An action sourced from a third-party repository on GitHub is not      
+  pinned to a full length                                                       
+          commit SHA. Pinning an action to a full length commit SHA is currently
+  the only way to use                                                           
+          an action as an immutable release. Pinning to a particular SHA helps  
+  mitigate the risk of a                                                        
+          bad actor adding a backdoor to the action's repository, as they would 
+  need to generate a                                                            
+          SHA-1 collision for a valid Git object payload.                       
+          Details: https://sg.run/koLA                                          
+                                                                                
+           73┆ uses: pypa/gh-action-pypi-publish@master
+            ⋮┆----------------------------------------
+           81┆ uses: pypa/gh-action-pypi-publish@master
+            ⋮┆----------------------------------------
+          171┆ uses: pypa/gh-action-pypi-publish@master
+            ⋮┆----------------------------------------
+          215┆ uses: docker://public.ecr.aws/y9k7q4m1/devops/cicd:latest
+                                                      
+    .github/workflows/revert-semgrep-docker-image.yml 
+       yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.
+  third-party-action-not-pinned-                                                
+       to-commit-sha                                                            
+          An action sourced from a third-party repository on GitHub is not      
+  pinned to a full length                                                       
+          commit SHA. Pinning an action to a full length commit SHA is currently
+  the only way to use                                                           
+          an action as an immutable release. Pinning to a particular SHA helps  
+  mitigate the risk of a                                                        
+          bad actor adding a backdoor to the action's repository, as they would 
+  need to generate a                                                            
+          SHA-1 collision for a valid Git object payload.                       
+          Details: https://sg.run/koLA                                          
+                                                                                
+           21┆ uses: docker/login-action@v2
+                                        
+    .github/workflows/start-release.yml 
+       yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.
+  third-party-action-not-pinned-                                                
+       to-commit-sha                                                            
+          An action sourced from a third-party repository on GitHub is not      
+  pinned to a full length                                                       
+          commit SHA. Pinning an action to a full length commit SHA is currently
+  the only way to use                                                           
+          an action as an immutable release. Pinning to a particular SHA helps  
+  mitigate the risk of a                                                        
+          bad actor adding a backdoor to the action's repository, as they would 
+  need to generate a                                                            
+          SHA-1 collision for a valid Git object payload.                       
+          Details: https://sg.run/koLA                                          
+                                                                                
+           39┆ uses: docker://public.ecr.aws/y9k7q4m1/devops/cicd:latest
+            ⋮┆----------------------------------------
+          101┆ uses: docker://public.ecr.aws/y9k7q4m1/devops/cicd:latest
+            ⋮┆----------------------------------------
+          257┆ uses: docker://public.ecr.aws/y9k7q4m1/devops/cicd:latest
+            ⋮┆----------------------------------------
+          309┆ uses: softprops/action-gh-release@v1
+            ⋮┆----------------------------------------
+          319┆ uses: docker://public.ecr.aws/y9k7q4m1/devops/cicd:latest
+            ⋮┆----------------------------------------
+          336┆ uses: softprops/action-gh-release@v1
+                                                   
+    .github/workflows/test-semgrep-pro-latest.yaml 
+       yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.
+  third-party-action-not-pinned-                                                
+       to-commit-sha                                                            
+          An action sourced from a third-party repository on GitHub is not      
+  pinned to a full length                                                       
+          commit SHA. Pinning an action to a full length commit SHA is currently
+  the only way to use                                                           
+          an action as an immutable release. Pinning to a particular SHA helps  
+  mitigate the risk of a                                                        
+          bad actor adding a backdoor to the action's repository, as they would 
+  need to generate a                                                            
+          SHA-1 collision for a valid Git object payload.                       
+          Details: https://sg.run/koLA                                          
+                                                                                
+           33┆ uses: aws-actions/configure-aws-credentials@v2
+                                            
+    .github/workflows/test-semgrep-pro.yaml 
+       yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.
+  third-party-action-not-pinned-                                                
+       to-commit-sha                                                            
+          An action sourced from a third-party repository on GitHub is not      
+  pinned to a full length                                                       
+          commit SHA. Pinning an action to a full length commit SHA is currently
+  the only way to use                                                           
+          an action as an immutable release. Pinning to a particular SHA helps  
+  mitigate the risk of a                                                        
+          bad actor adding a backdoor to the action's repository, as they would 
+  need to generate a                                                            
+          SHA-1 collision for a valid Git object payload.                       
+          Details: https://sg.run/koLA                                          
+                                                                                
+           58┆ uses: docker/setup-buildx-action@v2
+            ⋮┆----------------------------------------
+           68┆ uses: aws-actions/configure-aws-credentials@v2
+                                
+    .github/workflows/tests.yml 
+       yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.
+  third-party-action-not-pinned-                                                
+       to-commit-sha                                                            
+          An action sourced from a third-party repository on GitHub is not      
+  pinned to a full length                                                       
+          commit SHA. Pinning an action to a full length commit SHA is currently
+  the only way to use                                                           
+          an action as an immutable release. Pinning to a particular SHA helps  
+  mitigate the risk of a                                                        
+          bad actor adding a backdoor to the action's repository, as they would 
+  need to generate a                                                            
+          SHA-1 collision for a valid Git object payload.                       
+          Details: https://sg.run/koLA                                          
+                                                                                
+          163┆ uses: EndBug/add-and-commit@v9
+                                               
+    .github/workflows/update-semgrep-rules.yml 
+       yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.
+  third-party-action-not-pinned-                                                
+       to-commit-sha                                                            
+          An action sourced from a third-party repository on GitHub is not      
+  pinned to a full length                                                       
+          commit SHA. Pinning an action to a full length commit SHA is currently
+  the only way to use                                                           
+          an action as an immutable release. Pinning to a particular SHA helps  
+  mitigate the risk of a                                                        
+          bad actor adding a backdoor to the action's repository, as they would 
+  need to generate a                                                            
+          SHA-1 collision for a valid Git object payload.                       
+          Details: https://sg.run/koLA                                          
+                                                                                
+           52┆ uses: docker://public.ecr.aws/y9k7q4m1/devops/cicd:latest
+                                        
+    cli/src/semgrep/commands/install.py 
+       python.lang.security.audit.insecure-file-permissions.insecure-file-permis
+  sions                                                                         
+          These permissions `os.stat(semgrep_pro_path_tmp).st_mode         |    
+  stat.S_IEXEC         |                                                        
+          stat.S_IXGRP         | stat.S_IXOTH` are widely permissive and grant  
+  access to more people                                                         
+          than may be necessary. A good default is `0o644` which gives read and 
+  write access to                                                               
+          yourself and read access to everyone else.                            
+          Details: https://sg.run/AXY4                                          
+                                                                                
+          122┆ os.chmod(
+          123┆     semgrep_pro_path_tmp,
+          124┆     os.stat(semgrep_pro_path_tmp).st_mode
+          125┆     | stat.S_IEXEC
+          126┆     | stat.S_IXGRP
+          127┆     | stat.S_IXOTH,
+          128┆ )
+                                    
+    cli/src/semgrep/semgrep_core.py 
+       python.lang.compatibility.python37.python37-compatibility-importlib2     
+          Found 'importlib.resources', which is a module only available on      
+  Python 3.7+. This does not                                                    
+          work in lower versions, and therefore is not backwards compatible. Use
+  importlib_resources                                                           
+          instead for older Python versions.                                    
+          Details: https://sg.run/eL3y                                          
+                                                                                
+            1┆ import importlib.resources
+                                               
+    cli/tests/e2e/rules/cli_test/error/long.py 
+       python.django.security.injection.open-redirect.open-redirect             
+          Data from request ($DATA) is passed to redirect(). This is an open    
+  redirect and could be                                                         
+          exploited. Ensure you are redirecting to safe URLs by using           
+  django.utils.http.is_safe_url().                                              
+          See https://cwe.mitre.org/data/definitions/601.html for more          
+  information.                                                                  
+          Details: https://sg.run/Ave2                                          
+                                                                                
+            9┆ return redirect(request.POST.get("next"))
+            ⋮┆----------------------------------------
+            9┆ return redirect(request.POST.get("next"))
+            ⋮┆----------------------------------------
+           14┆ return redirect(request.get_host())
+            ⋮┆----------------------------------------
+           14┆ return redirect(request.get_host())
+            ⋮┆----------------------------------------
+           19┆ return redirect(request.method)
+            ⋮┆----------------------------------------
+           19┆ return redirect(request.method)
+            ⋮┆----------------------------------------
+       python.django.security.injection.open-redirect.open-redirect             
+          Data from request (url) is passed to redirect(). This is an open      
+  redirect and could be                                                         
+          exploited. Ensure you are redirecting to safe URLs by using           
+  django.utils.http.is_safe_url().                                              
+          See https://cwe.mitre.org/data/definitions/601.html for more          
+  information.                                                                  
+          Details: https://sg.run/Ave2                                          
+                                                                                
+           24┆ url = request.get_host()
+           25┆ print("something")
+           26┆ return redirect(url)
+            ⋮┆----------------------------------------
+           31┆ url = request.headers.get("referrer")
+           32┆ print("something")
+           33┆ return redirect(url)
+            ⋮┆----------------------------------------
+           49┆ url = request.POST.get("url")
+           50┆ return HttpResponseRedirect(url)
+
