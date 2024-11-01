@@ -65,4 +65,4 @@ Special thanks to the testssl and semgrep projects for providing the tools integ
 
 # License
 
-This project is licensed under the ??? License. 
+This project is licensed under the MIT License. 
