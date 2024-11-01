@@ -11,7 +11,7 @@ Ensure that the ports 5000 and 3307 are free on your machine.
 Getting Started
 
 ## 1. Clone the repository:
-`git clone https://github.com/aliraf62/orchestrator_ali orchestrator`
+`gh repo clone aliraf62/Orchestration-Project`
 
 
 ## 2. Change directory into the orchestrator folder:
