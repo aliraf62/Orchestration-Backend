@@ -1,5 +1,3 @@
-orchestrator_ali
-# README: Orchestrator
 # Overview
 
 The Orchestrator is a tool designed to automate and streamline security analyses. It integrates with testssl and semgrep to provide comprehensive vulnerability assessments and code analysis. The results are then parsed and stored in a MySQL database.
